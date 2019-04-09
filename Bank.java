@@ -7,7 +7,7 @@ public class Bank {
     	rand = new Random();
     }
     public Bank() {
-    	
+    	rand = new Random();
     }
 	public boolean verify(){
 	    int prob = rand.nextInt(100);
