@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package bookmenu;
+
 import java.util.Scanner;
 
 public class BookMenu {
@@ -67,10 +67,20 @@ public class BookMenu {
            foo.BookMenu();
         }
         else if(a == 2){
-            System.out.println("This is where your cart will display");
+            System.out.println("This is where your cart will display\nEnter Number:");
         }
         else if(a == 3){
-            System.out.println("This will take you to the checkout page");
+        	//Books and amount need to go here at some point.
+            System.out.println("Books and amount...\n1. Purchase\n2. Cancel");
+            Scanner user_input = new Scanner(System.in);
+            int choice = user_input.nextInt();
+            if (choice == 1) {
+            	OSS system = new OSS();
+            	system.bankInteractionConfirmation("Felix");
+            }
+            else {
+            	
+            }
         }
         else if(a == 4){
             foo.aboutPage();
