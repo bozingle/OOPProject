@@ -1,8 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+package accounts;
+
+
 
 import java.util.Scanner;
 
@@ -61,26 +59,18 @@ public class BookMenu {
         System.out.println("Type 'a' to add to cart or ");
     }
     
+    
+    
     void userMenu(int a){
         BookMenu foo = new BookMenu();
         if (a == 1){
            foo.BookMenu();
         }
         else if(a == 2){
-            System.out.println("This is where your cart will display\nEnter Number:");
+            System.out.println("This is where your cart will display");
         }
         else if(a == 3){
-        	//Books and amount need to go here at some point.
-            System.out.println("Books and amount...\n1. Purchase\n2. Cancel");
-            Scanner user_input = new Scanner(System.in);
-            int choice = user_input.nextInt();
-            if (choice == 1) {
-            	OSS system = new OSS();
-            	system.bankInteractionConfirmation("Felix");
-            }
-            else {
-            	
-            }
+            System.out.println("This will take you to the checkout page");
         }
         else if(a == 4){
             foo.aboutPage();
@@ -128,7 +118,8 @@ public class BookMenu {
                 }
             }
             else if(choice == 2){
-                System.out.println("This is where the create account logic will be displayed");
+                OSS system = new OSS();
+                system.createAccount();
             }
             else if(choice == 3){
                 System.out.println("Goobbye!");
