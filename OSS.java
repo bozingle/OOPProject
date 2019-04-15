@@ -9,34 +9,53 @@ package accounts;
  *
  * @author thoma_000
  */
-import java.io.PrintWriter;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 import java.util.Scanner;
 //This file will communicate with the supplier, user interface, and individual components of the project.
 
 
 public class OSS {
-	//Will verify credit card with the bank.
-	public void bankInteractionConfirmation(String userName){
-            
-		//Need to decide on how to save user data still. This is for now.
-		//Bank bank = new Bank();
-		//if (bank.verify()){
-        		//System.out.println("Credit card was approved.\n");
-        		//createDeliveryOrder();
-        		//saveConfirmationNumber(userName);
-		//}
-		//else {
-    		//System.out.println("Credit card was not approved.\n");
-             
-    	//}
-	}
+    bookCart cart[];
+    static int conNum;
+    OSS(){
+        try{
+            File file = new File("C:\\Users\\thoma_000\\Documents\\NetBeansProjects\\Accounts\\src\\accounts\\test.txt");
+            Scanner inputfile = new Scanner(file);
+            conNum = Integer.parseInt(inputfile.nextLine());
+            inputfile.close();
+        }
+        catch(Exception e){}
+        
+    }
+    //Will verify credit card with the bank.
+    public void bankInteractionConfirmation(String userName){
+            //Need to decide on how to save user data still. This is for now.
+            Bank bank = new Bank();
+            if (bank.verify()){
+                    System.out.println("Credit card was approved.\n");
+                    createDeliveryOrder(userName);
+                    saveConfirmationNumber(userName);
+            }
+            else {
+            System.out.println("Credit card was not approved.\n");
+
+    	}
+     }
 	
 	//Will create a delivery order and will be handled by the supplier interface.
-	public void createDeliveryOrder() {
-		
+	public void createDeliveryOrder(String userName) {
+            conNum++;
+            PrintWriter conNumFile;
+            BufferedWriter in;
+            try{
+                conNumFile = new PrintWriter("C:\\Users\\thoma_000\\Documents\\NetBeansProjects\\Accounts\\src\\accounts\\test.txt");
+                conNumFile.println(conNum);
+                in = new BufferedWriter(new FileWriter("C:\\Users\\thoma_000\\Desktop\\Account\\"+userName+".txt",true));
+                in.write(conNum);
+                conNumFile.close();
+                in.close();
+            }
+            catch(Exception e) {}
 	}
         
         public void createAccount(){

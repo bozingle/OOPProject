@@ -1,11 +1,9 @@
 package accounts;
 
-
-
 import java.util.Scanner;
 
 public class BookMenu {
-    
+   
     void displaybegin(){
         System.out.println("********************************");
         System.out.println("* Welcome to OOP Top 100 Books *");
@@ -59,8 +57,6 @@ public class BookMenu {
         System.out.println("Type 'a' to add to cart or ");
     }
     
-    
-    
     void userMenu(int a){
         BookMenu foo = new BookMenu();
         if (a == 1){
@@ -70,7 +66,17 @@ public class BookMenu {
             System.out.println("This is where your cart will display");
         }
         else if(a == 3){
-            System.out.println("This will take you to the checkout page");
+            //Books and amount need to go here at some point.
+            System.out.println("Books and amount...\n1. Purchase\n2. Cancel");
+            Scanner user_input = new Scanner(System.in);
+            int choice = user_input.nextInt();
+            if (choice == 1) {
+            	OSS system = new OSS();
+            	system.bankInteractionConfirmation("tommy");
+            }
+            else {
+            	
+            }
         }
         else if(a == 4){
             foo.aboutPage();
