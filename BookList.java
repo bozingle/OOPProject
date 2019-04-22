@@ -10,7 +10,10 @@ import java.util.List;
 public class BookList 
 {
 	List<Book> top100;
-	
+	/**
+	 * Creates a booklist from the given .csv file
+	 * @param fileName
+	 */
 	public BookList(String fileName) 
 	{
 		// TODO Auto-generated constructor stub
@@ -22,14 +25,24 @@ public class BookList
 			top100.add(b);
 		}
 	}
-	
+	/**
+	 * Returns a short description of the selected book
+	 * @param index which book to describe
+	 * @return Title, author, price
+	 */
 	public String getShortInfo(int index)
 	{
 		Book get = top100.get(index);
 		String little = String.format("Title: %30s Author: %20s Price: %.2f", get.getTitle(), get.getAuthor(), get.getPrice());
 		return little;
 	}
-	
+	/**
+	 * Returns a full description of the selected book
+	 * @param index which book to describe
+	 * @return Title, author, price, shipping
+	 * 			Year, publisher, supplier, stock
+	 * 			Short Summary
+	 */
 	public String getLongInfo(int index)
 	{
 		Book get = top100.get(index);
@@ -47,8 +60,12 @@ public class BookList
 								,get.getShipping(),get.getYear(),get.getPublisher(),get.getSupplier(),stock,get.getSummary());
 		return start + big;
 	}
-	
-	public void buy(int index, int quantity)
+	/**
+	 * Buys a number of books, reducing the amount of stock remaining
+	 * @param index which book to buy
+	 * @param quantity the cost of buying the books: (price*quantity) + shipping
+	 */
+	public double buy(int index, int quantity)
 	{
 		Book get = top100.get(index);
 		try
@@ -59,12 +76,14 @@ public class BookList
 		{
 			throw new IllegalArgumentException(e);
 		}
+		double together = get.getPrice() * quantity;
+		return together + get.getShipping();
 	}
 	
 	/**
-	 * 
-	 * @param fileName
-	 * @return
+	 * Reads a formatted .csv file to convert into a booklist
+	 * @param fileName which file to read
+	 * @return a list of string arrays that contains the books' information
 	 */
 	private List<String[]> readFile(String fileName, String split)
 	{
