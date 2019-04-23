@@ -1,9 +1,12 @@
-package accounts;
+package oop;
 
 import java.util.Scanner;
 
 public class BookMenu {
-   
+	static OSS system = new OSS();
+	static Scanner keyboard = new Scanner(System.in);
+	String username = "";// Can change later to whatever dhruv has
+	
     void displaybegin(){
         System.out.println("********************************");
         System.out.println("* Welcome to OOP Top 100 Books *");
@@ -44,12 +47,47 @@ public class BookMenu {
     }
     
     void BookMenu(){        
-        System.out.println("'displays books 1 - 10'");
-        System.out.println("Type 'N' for next page");
-        //this will only display on pages 2 - 10
-        System.out.println("Type 'P' for previous page");
-        
-        System.out.println("Enter number to see book info");       
+    	int tenSet = 0;//Indicates which set of books to display. When tenSet = 0,display10 will display books 0-9, and it keeps displaying similar intervals as you increment tenSet. 
+        int startIndex = 0;
+        int endIndex = 9;
+        String choice = "";
+    	while (true) {
+    		System.out.println(choice);
+        	startIndex = (tenSet*10);
+        	endIndex = ((tenSet+1)*10-1);
+	    	System.out.println("OOP Books("+(startIndex+1)+"-"+(endIndex+1)+")");
+	        system.display10(startIndex, endIndex);
+	        System.out.println("Enter 'P' for previous page\t"
+	        		+ "Enter 'N' for next page\n"
+	        		+ "\tEnter number to see book info or C to cancel:");
+	        while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("P")) || (choice.equals("N")) || (choice.matches("\\d")) || (choice.equals("N")) || (choice.equals("C")))
+	        	choice = keyboard.nextLine().toUpperCase();
+	        if (choice.equals("P"))
+	        	tenSet--;
+	        else if (choice.equals("N")) 
+	        	tenSet++;
+	        else if (choice.matches("\\d")) {
+	        	System.out.println("Picking book");
+	        	int index = Integer.parseInt(choice);
+	        	system.selectBook(index);
+	        	System.out.println("Purchase book(Y/N): ");
+	        	while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("Y")) || (choice.equals("N"))) {
+	        			choice = keyboard.nextLine();
+	        			if (!(choice.equals("Y")) || (choice.equals("N")))
+	        				System.out.println("Please give correct input.");
+	        	}
+	        	if (choice.equals("Y")) {
+	        		int quantity;
+	        		while ((choice.length() > 1 || choice.length() == 0) && !(choice.matches("\\d")))
+	        				choice = keyboard.nextLine();
+	        		quantity = Integer.parseInt(choice);
+	        		system.addToCart(index,quantity);
+	        	}
+	        }
+	        else if (choice.equals("C")) 
+	        	break;
+	        choice = "";
+        }
     }
     
     void BookInfo(){
@@ -63,16 +101,18 @@ public class BookMenu {
            foo.BookMenu();
         }
         else if(a == 2){
-            System.out.println("This is where your cart will display");
+        	//Assumes a user is logged in.
+            system.displayCart();
         }
         else if(a == 3){
             //Books and amount need to go here at some point.
-            System.out.println("Books and amount...\n1. Purchase\n2. Cancel");
-            Scanner user_input = new Scanner(System.in);
-            int choice = user_input.nextInt();
+            system.displayCart();
+            int choice = keyboard.nextInt();
             if (choice == 1) {
-            	OSS system = new OSS();
-            	system.bankInteractionConfirmation("tommy");
+            	boolean accepted = system.bankInteractionConfirmation(username);
+            	if (accepted) {
+            		system.createDeliveryOrder(username);
+            	}
             }
             else {
             	
@@ -94,10 +134,9 @@ public class BookMenu {
         }
     }   
     
-    public static void main(String[] args) {
+   public static void main(String[] args) {
         
         BookMenu foo = new BookMenu();
-        Scanner user_input = new Scanner(System.in);
         int choice;
         foo.displaybegin();
         
@@ -105,16 +144,15 @@ public class BookMenu {
         while (true){            
             foo.startMenu();
             System.out.print("Enter number: ");
-            choice = user_input.nextInt();
+            choice = keyboard.nextInt();
             
             if(choice == 1){
                 System.out.println("This is where the login logic will be displayed");
                 System.out.println("\n");
-                //I am assuming that the login was succesful
                 while(true){
                     foo.mainMenu();
                     System.out.println("Enter Number: ");
-                    choice = user_input.nextInt();
+                    choice = keyboard.nextInt();
                     if (choice != 7){
                         foo.userMenu(choice);
                     }
@@ -124,7 +162,6 @@ public class BookMenu {
                 }
             }
             else if(choice == 2){
-                OSS system = new OSS();
                 system.createAccount();
             }
             else if(choice == 3){
@@ -132,5 +169,5 @@ public class BookMenu {
                 break;
             }
         }        
-    }    
+    }   
 }
