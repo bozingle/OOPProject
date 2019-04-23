@@ -68,7 +68,7 @@ public class BookMenu {
 	        	tenSet++;
 	        else if (choice.matches("\\d")) {
 	        	System.out.println("Picking book");
-	        	int index = Integer.parseInt(choice);
+	        	int index = Integer.parseInt(choice) - 1;
 	        	system.selectBook(index);
 	        	System.out.println("Purchase book(Y/N): ");
 	        	while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("Y")) || (choice.equals("N"))) {

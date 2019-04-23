@@ -10,7 +10,7 @@ import java.io.*;
 public class Orders  implements Serializable
 {
 	Map<Integer, String> userOrders; //Maps the confirmation number to a username
-	Map <Integer, String> orders; //Maps the confirmation number to a formatted string of the catalog.
+	Map <Integer, String> orders; //Maps the confirmation number to a formatted string of the cart.
 	Integer nextNum;
 	static String dataFileName = "C:\\Users\\joggl\\eclipse-workspace\\oop\\src\\oop\\orderData.dat";
 	static String saveLocation = "C:\\Users\\joggl\\eclipse-workspace\\oop\\src\\oop\\";
