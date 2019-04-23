@@ -50,15 +50,19 @@ public class OSS {
     
     public void displayCart() {
 		Set<Integer> cartSet = cart.getCartItems();
+		int iter = 1;
 		for (int index : cartSet) {
-			System.out.println(bL.getShortInfo(index));
+			System.out.println(iter + ")"+ bL.getShortInfo(index));
+			iter++;
 		}
 	}
     
     //Display 10 books
     public void display10(int startIndex, int endIndex) {
+    	int iter = 1;
     	for (int i = startIndex; i < endIndex; i++) {
-    		System.out.println(bL.getShortInfo(i));
+    		System.out.println(iter + ")"+ bL.getShortInfo(i));
+    		iter++;
     	}
     }
     
