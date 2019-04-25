@@ -5,11 +5,14 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class BookList 
 {
-	List<Book> top100;
+	Map<Integer,Book> top100;
+	int numOfBooks;
 	/**
 	 * Creates a booklist from the given .csv file
 	 * @param fileName
@@ -18,11 +21,12 @@ public class BookList
 	{
 		// TODO Auto-generated constructor stub
 		List<String[]> rawData = readFile(fileName,",");
-		List<Book> top100 = new ArrayList<Book>();
-		for(int i = 0; i < rawData.size(); i++)
+		top100 = new HashMap<Integer,Book>();
+		for(int i = 1; i < rawData.size(); i++)
 		{
 			Book b = new Book(rawData.get(i));
-			top100.add(b);
+			top100.put(i,b);
+			numOfBooks = i;
 		}
 	}
 	/**

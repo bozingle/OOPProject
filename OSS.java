@@ -13,9 +13,10 @@ import java.util.Set;
 
 public class OSS {
     Orders orderList = new Orders();
-    static String bookListFP = "";
+    static String bookListFP = "C:\\Users\\joggl\\eclipse-workspace\\oop\\src\\oop\\Top25.csv";
     bookCart cart = new bookCart();
     BookList bL = new BookList(this.bookListFP);
+    Accounts accs = new Accounts();
     
     OSS(){
     }
@@ -26,7 +27,7 @@ public class OSS {
     
 
     //Will verify credit card with the bank.
-    public boolean bankInteractionConfirmation(String userName){
+    public boolean bankInteractionConfirmation(){
         //Need to decide on how to save user data still. This is for now.
         Bank bank = new Bank();
         if (bank.verify()){
@@ -40,12 +41,17 @@ public class OSS {
      }
 	
 	//Will create a delivery order and will be handled by the supplier interface.
-	public void createDeliveryOrder(String username) {
+	public void createDeliveryOrder() {
          
 	}
         
     public void createAccount(){
-        
+        accs.createAccount();
+        accs.save();
+    }
+    
+    void displayAccountInfo() {
+    	accs.displayAccountInfo();
     }
     
     public void displayCart() {
@@ -57,17 +63,27 @@ public class OSS {
 		}
 	}
     
-    //Display 10 books
-    public void display10(int startIndex, int endIndex) {
-    	int iter = 1;
-    	for (int i = startIndex; i < endIndex; i++) {
-    		System.out.println(iter + ")"+ bL.getShortInfo(i));
-    		iter++;
+    public void displayBooks(int startIndex, int endIndex) {
+    	if (startIndex >= 1 && endIndex <= bL.numOfBooks) {
+    		System.out.println("OOP Books("+startIndex+"-"+endIndex+")");
+	    	for (int i = startIndex; i < endIndex; i++) {
+	    		System.out.println(i + ")"+ bL.getShortInfo(i));
+	    	}
+    	}
+    	else if(startIndex >= 1){
+    		System.out.println("OOP Books("+startIndex+"-"+bL.numOfBooks+")");
+    		for (int i = startIndex; i < bL.numOfBooks+1; i++) {
+    			System.out.println(i + ")"+ bL.getShortInfo(i));
+    		}
     	}
     }
     
     public void login(){
-        
+        accs.logIn();
+    }
+    
+    public void logout() {
+    	accs.logOut();
     }
     
     //Select book
