@@ -72,7 +72,7 @@ public class BookMenu {
 	        	choice = "";
 	        	while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("Y")) || (choice.equals("N"))) {
 	        			choice = keyboard.nextLine().toUpperCase();
-	        			if (!(choice.equals("Y")) || (choice.equals("N"))) {
+	        			if (!(choice.equals("Y") || (choice.equals("N")))) {
 	        				System.out.println("Please give correct input.");
 	        				choice = "";
 	        			}
@@ -126,7 +126,16 @@ public class BookMenu {
             foo.aboutPage();
         }
         else if(a.equals("5")){
-            system.displayAccountInfo();
+        	System.out.println("1)See User information.\n2)See previous purchases with confirmation numbers.\nEnter number: ");
+        	String choice = keyboard.nextLine();
+        	if (choice.equals("1"))
+        		system.displayAccountInfo();
+        	else if (choice.equals("2")) {
+        		System.out.println("Enter confirmation number: ");
+        		choice = keyboard.nextLine();
+        		system.displayPrevPurchase(Integer.parseInt(choice));
+        	}
+            
         }
         else if(a.equals("6")){
         	system.logout();
@@ -166,5 +175,5 @@ public class BookMenu {
                 break;
             }
         }        
-    } 
+    }
 }

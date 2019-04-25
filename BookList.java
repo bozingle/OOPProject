@@ -129,4 +129,8 @@ public class BookList
         }
         return info;
     }
+	
+	public Book getBook(int index) {
+		return top100.get(index);
+	}
 }

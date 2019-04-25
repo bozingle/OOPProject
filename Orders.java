@@ -41,8 +41,16 @@ public class Orders  implements Serializable
 	 * Display information about confirmation number if the username is associated with the confirmation number.
 	 */
 	public void displayPurchaseData(String username, int conNum) {
+		username = username.toUpperCase();
+		
 		if (this.userOrders.get(conNum) != null && this.userOrders.get(conNum).contentEquals(username)) {
-			System.out.println(this.orders.get(conNum));
+			String[] stuff = this.orders.get(conNum).split(",");
+			
+			for (String i : stuff) {
+				String[] subStuff = i.split("~");
+				System.out.println("Title:\t"+subStuff[0]+" Quantity:\t"+subStuff[2]+" Price:\t$"+subStuff[1]);
+			}
+			System.out.println();
 		}
 		else {
 			System.out.println("You do not have access to this order, or the order does not exist.");

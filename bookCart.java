@@ -21,6 +21,11 @@ public class bookCart{
     public Set<Integer> getCartItems() {
     	return this.cart.keySet();
     }
+    
+    public int getFromCart(int index) {
+    	return this.cart.get(index);
+    }
+    
     public void clearCart() {
     	this.cart = new HashMap<Integer, Integer>();
     }

@@ -42,7 +42,18 @@ public class OSS {
 	
 	//Will create a delivery order and will be handled by the supplier interface.
 	public void createDeliveryOrder() {
-         
+         Orders ord = new Orders();
+         String[] data = accs.userAccountData.get(accs.loggedIn).split(",");
+         String orderData = "";
+         Book b;
+         for (int i : cart.getCartItems()) {
+        	 b = bL.getBook(i);
+        	 orderData += b.getTitle()+"~"+b.getPrice()*cart.cart.get(i)+"~"+cart.cart.get(i)+",";
+        	 bL.buy(i, cart.cart.get(i));
+         }
+         ord.putPurchaseData(accs.loggedIn,data[0],orderData);
+         ord.save();
+         cart.clearCart();
 	}
         
     public void createAccount(){
@@ -58,10 +69,16 @@ public class OSS {
 		Set<Integer> cartSet = cart.getCartItems();
 		int iter = 1;
 		for (int index : cartSet) {
-			System.out.println(iter + ")"+ bL.getShortInfo(index));
+			System.out.println(iter + ")"+ bL.getShortInfo(index) + "\tQuantity: "+cart.getFromCart(index));
 			iter++;
 		}
+		System.out.println("");
 	}
+    
+    public void displayPrevPurchase(int conNum) {
+    	Orders ord = new Orders();
+    	ord.displayPurchaseData(accs.loggedIn, conNum);
+    }
     
     public void displayBooks(int startIndex, int endIndex) {
     	if (startIndex >= 1 && endIndex <= bL.numOfBooks) {
