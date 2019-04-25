@@ -72,8 +72,7 @@ public class Orders  implements Serializable
 	public void save() {
 		try {
 		 FileOutputStream file = new FileOutputStream(Orders.dataFileName); 
-         ObjectOutputStream out = new ObjectOutputStream(file); 
-           
+         ObjectOutputStream out = new ObjectOutputStream(file);
          out.writeObject(this); 
          out.close(); 
          file.close();

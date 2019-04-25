@@ -126,8 +126,14 @@ public class BookMenu {
             foo.aboutPage();
         }
         else if(a.equals("5")){
-        	System.out.println("1)See User information.\n2)See previous purchases with confirmation numbers.\nEnter number: ");
-        	String choice = keyboard.nextLine();
+        	String choice;
+        	while (true) {
+	        	System.out.println("1)See User information.\n2)See previous purchases with confirmation numbers.\nEnter number: ");
+	        	choice = keyboard.nextLine();
+	        	if (choice.length() == 1 && choice.matches("\\d"))
+	        		break;
+	        	System.out.println("Please give appropriate input.");
+        	}
         	if (choice.equals("1"))
         		system.displayAccountInfo();
         	else if (choice.equals("2")) {

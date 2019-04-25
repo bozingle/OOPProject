@@ -22,7 +22,10 @@ public class OSS {
     }
     
     public void addToCart(int index, int quantity) {
-		cart.pushToCart(index, quantity);
+    	if (bL.sufficientQuantity(index,quantity))
+    		cart.pushToCart(index, quantity);
+    	else
+    		System.out.println("Can't purchase this amount of the book selected.");
 	}
     
 
@@ -53,6 +56,7 @@ public class OSS {
          }
          ord.putPurchaseData(accs.loggedIn,data[0],orderData);
          ord.save();
+         bL.updateStock(bookListFP);
          cart.clearCart();
 	}
         

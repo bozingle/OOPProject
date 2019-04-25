@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -129,6 +130,25 @@ public class BookList
         }
         return info;
     }
+	
+	public void updateStock(String filename) {
+		try {
+			PrintWriter file = new PrintWriter(filename);
+			Book b;
+			file.println("Number,Name,Author,Publisher,Year,Supplier,Price,Shipping,Stock,Summary");
+			for (int i = 1; i <= numOfBooks; i++) {
+				b = top100.get(i);
+				file.println(i+","+b.getTitle()+","+b.getAuthor()+","+b.getPublisher()+","+b.getYear()+","+b.getSupplier()+","+b.getPrice()+","+b.getShipping()+","+b.getStock()+","+b.getSummary());
+			}
+			file.close();
+		}
+		catch(Exception e) {}
+	}
+	public boolean sufficientQuantity(int index, int quantity) {
+		if (getBook(index).getStock() < quantity || quantity <= 0)
+			return false;
+		return true;
+	}
 	
 	public Book getBook(int index) {
 		return top100.get(index);
