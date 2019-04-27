@@ -58,13 +58,13 @@ public class BookMenu {
 	        System.out.println("Enter 'P' for previous page\t"
 	        		+ "Enter 'N' for next page\n"
 	        		+ "\tEnter number to see book info or C to cancel:");
-	        while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("P") || (choice.equals("N")) || (choice.matches("\\d")) || (choice.equals("N")) || (choice.equals("C"))))
+	        while ((choice.length() > 1 || choice.length() == 0) && !(choice.equals("P") || (choice.equals("N")) || (choice.matches("\\d+")) || (choice.equals("N")) || (choice.equals("C"))))
 	        	choice = keyboard.nextLine().toUpperCase();
 	        if (choice.equals("P") && tenSet-1 >=0)
 	        	tenSet--;
 	        else if (choice.equals("N")) 
 	        	tenSet++;
-	        else if (choice.matches("\\d")) {
+	        else if (choice.matches("\\d+")) {
 	        	System.out.println("Picking book");
 	        	int index = Integer.parseInt(choice);
 	        	system.selectBook(index);
@@ -80,7 +80,7 @@ public class BookMenu {
 	        	if (choice.equals("Y")) {
 	        		int quantity;
 	        		choice = "";
-	        		while ((choice.length() < 1 || choice.length() == 0) && !(choice.matches("\\d"))) {
+	        		while ((choice.length() < 1 || choice.length() == 0) && !(choice.matches("\\d+"))) {
 	        			System.out.println("How many would you like to buy?");
 	        			choice = keyboard.nextLine();
 	        		}

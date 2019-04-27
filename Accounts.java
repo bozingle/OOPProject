@@ -36,7 +36,7 @@ class Accounts implements Serializable{
 	void createAccount() { 
 		Scanner keyboard = new Scanner(System.in);
 		String mapping = "";
-		String email, username, password,phonenumber;
+		String email, username, password,phonenumber,creditnum;
 		while (true) {
 		    System.out.println("Please enter your email : ");      
 		    email = keyboard.nextLine().toUpperCase();
@@ -65,7 +65,16 @@ class Accounts implements Serializable{
 	    	System.out.println("Please enter an appropriate phone number.");
 	    }
 	    mapping += phonenumber+",";
-	    
+	    System.out.println("Enter an address :");
+	    mapping += keyboard.nextLine()+",";
+	    while (true) {
+	    	System.out.println("Enter a credit card number :");
+	    	creditnum = keyboard.nextLine();
+	    	if (creditnum.matches("\\d+"))
+	    		break;
+	    	System.out.println("Please enter an appropriate value.");
+	    }
+	    mapping += creditnum+",";
 	    while (true) {
 		    System.out.println("Please enter your password (at least 5 characters) : ");       
 		    password = keyboard.nextLine();
@@ -88,7 +97,7 @@ class Accounts implements Serializable{
 	        System.out.println("Please enter your password : ");
 	        password = keyboard.nextLine();
 	        if (this.userAccountData.get(user) != null) {
-		        requiredPass = this.userAccountData.get(user).split(",")[2];
+		        requiredPass = this.userAccountData.get(user).split(",")[4];
 		        
 		        if (this.userAccountData.get(user) != null && requiredPass.equals(password) ) {
 		        	this.loggedIn = user;
@@ -102,7 +111,7 @@ class Accounts implements Serializable{
 	    }
     }
     void displayAccountInfo() {
-    	String[] corres = {"Email: ", "Phone number: "};
+    	String[] corres = {"Email: ", "Phone number: ", "Address: ", "Credit Card number: "};
     	int i = 0;
     	for (String str : this.userAccountData.get(loggedIn).split(",")) {
     		System.out.println(corres[i]+str);

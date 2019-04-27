@@ -51,7 +51,7 @@ public class OSS {
          Book b;
          for (int i : cart.getCartItems()) {
         	 b = bL.getBook(i);
-        	 orderData += b.getTitle()+"~"+b.getPrice()*cart.cart.get(i)+"~"+cart.cart.get(i)+",";
+        	 orderData += b.getTitle()+"~"+(Math.floor((b.getPrice()*cart.cart.get(i)+b.getShipping())*100)/100)+"~"+cart.cart.get(i)+",";
         	 bL.buy(i, cart.cart.get(i));
          }
          ord.putPurchaseData(accs.loggedIn,data[0],orderData);
