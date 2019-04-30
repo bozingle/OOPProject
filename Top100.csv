@@ -1,0 +1,101 @@
+Number,Name,Author,Publisher,Year,Supplier,Price,Shipping,Stock,Summary
+1,ULYSSES,James Joyce,Sylvia Beach,1922,Thomas & Thomas,11.33,1.60,0,Modernist novel that parrallels the epic journey of Odysseus in the Odyssey
+2,THE GREAT GATSBY,F. Scott Fitzgerald,Charles Scribner's Sons,1925,Thomas & Thomas,11.68,1.39,4,Multi-millionaire Jay Gatsby is a portrait of the US during the roaring twenties
+3,A PORTRAIT OF THE ARTIST AS A YOUNG MAN,James Joyce,Viking Press,1916,Thomas & Thomas,11.94,3.47,2,Stephen Dedalus rebels against the Catholic norms of Ireland
+4,LOLITA,Vladimir Nabokov,Olympia Press,1955,Thomas & Thomas,18.04,1.50,4,A middle aged literature professor becomes sexually obsessed with a 12 year old girl
+5,BRAVE NEW WORLD,Aldous Huxley,Chatto & Windus,1931,Thomas & Thomas,13.49,3.76,1,A pain-free dystopian future where your life path is set before you're born
+6,THE SOUND AND THE FURY,William Faulkner,Jonathan Cape,1929,Thomas & Thomas,15.04,4.23,5,A family of southern aristocrats falls into disarray over the course of 30 years
+7,CATCH-22,Joseph Heller,Simon & Schuster,1953,Thomas & Thomas,19.87,3.33,10,John Yossarian is trapped in an absurdist air force base during WWII
+8,DARKNESS AT NOON,Arthur Koestler,Macmillan,1940,Thomas & Thomas,6.27,1.02,4,A russian revolutionary is tried for treason by the government he helped create
+9,SONS AND LOVERS,D.H. Lawrence,Gerald Duckworth,1913,Thomas & Thomas,10.97,1.31,1,Walter Morel can never find a lover that he and his mother approve of
+10,THE GRAPES OF WRATH,John Steinbeck,Viking Press,1939,Thomas & Thomas,7.40,3.95,7,An Oklahoman family flees to California during the dust bowl
+11,UNDER THE VOLCANO,Malcolm Lowry,Reynal & Hitchcock,1947,Thomas & Thomas,16.80,1.35,7,An alchoholic who works at the Mexican Consul needs to go home
+12,THE WAY OF ALL FLESH,Samuel Butler,Grant Richards,1903,Thomas & Thomas,6.76,2.63,10,A critique of Victorian era hypocrisy
+13,1984,George Orwell,Secker & Warburg,1949,Thomas & Thomas,12.02,5.40,7,The world superstate of Oceania manipulates language and history to control its inhabitants
+14,"I, CLAUDIUS",Robert Graves,Arthur Baker,1934,Thomas & Thomas,14.72,3.76,6,An 'autobiography' of the great Roman emperor Claudius
+15,TO THE LIGHTHOUSE,Virginia Woolf,Hogarth Press,1927,Thomas & Thomas,9.81,3.99,5,The Ramsey family wisits the Isle of the Skye in 1910s Scotland
+16,AN AMERICAN TRAGEDY,Theodore Dreiser,Boni & Liveright,1925,Thomas & Thomas,11.45,2.19,7,Clyde Griffiths rides the American lifestyle to its highest highs and lowest lows
+17,THE HEART IS A LONELY HUNTER,Carson McCullers,Houghton Mifflin,1940,Thomas & Thomas,11.21,3.41,9,A novel accounting the struggles of a deaf man's friends in Georgia
+18,SLAUGHTERHOUSE-FIVE,Kurt Vonnegut,Delacorte,1969,Thomas & Thomas,5.46,1.83,9,Billy Pilgram is unstuck in time and jumps randomly through his absurd life
+19,INVISIBLE MAN,Ralph Ellison,Random House,1952,Thomas & Thomas,10.73,4.49,7,An unnamed black man faces racial prejudice and black nationalism
+20,NATIVE SON,Richard Wright,Harper & Brothers,1940,Thomas & Thomas,14.59,2.21,5,Bigger Thomas lives in utter poverty a situation which inevitably leads to murder
+21,HENDERSON THE RAIN KING,Saul Bellow,Viking Press,1959,Thomas & Thomas,10.54,2.26,5,A rich man feels a spiritual void that leads him to Africa
+22,APPOINTMENT IN SAMARRA,John O’Hara,Harcourt Brace,1934,Thomas & Thomas,12.30,3.11,9,A wealthy car dealer goes on a path of self-destruction
+23,USA TRILOGY,John Dos Passos,Library of America,1936,Thomas & Thomas,9.10,2.44,8,The historical development of America told in short biographies and newspaper clippings
+24,WINESBURG OHIO,Sherwood Anderson,B W Huebsch,1919,Thomas & Thomas,8.34,1.08,9,Sherwood Anderson grows up in then eventually abandons Winesburg Ohio
+25,A PASSAGE TO INDIA,E.M. Forster,Harcourt Brace,1924,Thomas & Thomas,6.36,3.41,3,Four friends go spelunking in India but wind up going to trial
+26,THE WINGS OF THE DOVE,Henry James,Charles Scribner's Sons,1902,Thomas & Thomas,8.97,1.80,0,A poor couple seek to marry with the help of a dying heiress
+27,THE AMBASSADORS,Henry James,Harper & Brothers,1903,Thomas & Thomas,6.06,2.18,7,Lamert Strether tracks down his future son-in-law to bring him into the family business
+28,TENDER IS THE NIGHT,F. Scott Fitzgerald,Charles Scribner's Sons,1934,Thomas & Thomas,13.99,4.53,6,An American psycologist has an affair with a young actress
+29,THE STUDS LONIGAN TRILOGY,James T. Farrell,Vanguard Press,1932,Thomas & Thomas,14.56,3.18,4,A promising young man's fatal flaw is maintaining his image over all else
+30,THE GOOD SOLDIER,Ford Madox Ford,John Lane,1915,Thomas & Thomas,15.59,4.67,2,A man with a seemingly perfect life becomes a soldier in WWI
+31,ANIMAL FARM,George Orwell,Secker & Warburg,1945,Thomas & Thomas,17.28,3.36,9,The Russian Revolution but with farm animals
+32,THE GOLDEN BOWL,Henry James,Charles Scribner's Sons,1904,Thomas & Thomas,12.01,4.54,3,A father and daughter are explored through their own consciousnesses
+33,SISTER CARRIE,Theodore Dreiser,Doubleday,1900,Thomas & Thomas,15.80,5.82,4,A young country girl moves to the city to persue the American dream
+34,A HANDFUL OF DUST,Evelyn Waugh,Chapman & Hall,1934,Thomas & Thomas,7.18,3.30,0,An English country squire is betrayed by his wife and goes on an expidition to Brazil
+35,AS I LAY DYING,William Faulkner,Turtleback books,1930,Thomas & Thomas,18.17,2.37,5,Addie Bundren's family will honor her dying wish to be buried in her home town
+36,ALL THE KING’S MEN,Robert Penn Warren,Harcourt Brace,1946,Thomas & Thomas,18.39,2.84,1,"A cynical, liberal populist rises to power in the American south Huey Long style"
+37,THE BRIDGE OF SAN LUIS REY,Thornton Wilder,Albert & Charles Boni,1927,Thomas & Thomas,15.88,2.61,9,The story of several people who die when an Incan rope bridge collapses
+38,HOWARDS END,E.M. Forster,Edward Arnold,1910,Thomas & Thomas,15.76,4.55,10,A commentary on socioeconomic class in Britain
+39,GO TELL IT ON THE MOUNTAIN,James Baldwin,Knopf,1953,Thomas & Thomas,15.84,3.72,2,Semi-autobiographical novel about a young teenager growing up in Harlem
+40,THE HEART OF THE MATTER,Graham Greene,William Heinemann,1948,Thomas & Thomas,16.64,2.57,1,Henry Scobie experiences a life changing moral crisis
+41,LORD OF THE FLIES,William Golding,Faber and Faber,1954,Thomas & Thomas,7.78,5.99,4,A group of british boys are trapped on an uninhabited island
+42,DELIVERANCE,James Dickey,Houghton Mifflin,1970,Thomas & Thomas,6.58,4.17,3,A canoe trip in Georgia goes south when a group of hillbillies show up
+43,A QUESTION OF UPBRINGING,Anthony Powell,William Heinemann,1951,Thomas & Thomas,15.54,3.70,9,Three friends fresh out of college must follow different paths in life
+44,POINT COUNTER POINT,Aldous Huxley,Chatto & Windus,1928,Thomas & Thomas,15.59,2.71,1,A massive work that combines several stories like a debate or musical motif
+45,THE SUN ALSO RISES,Ernest Hemingway,Charles Scribner's Sons,1926,Thomas & Thomas,9.33,2.90,3,American and English expatriates travel to Spain to watch the running of the bulls
+46,THE SECRET AGENT,Joseph Conrad,Methuen & Co,1907,Thomas & Thomas,7.58,3.11,5,Aldolf Verloc must carry out a terrorist mission to regain his status as a spy
+47,NOSTROMO,Joseph Conrad,Harper & Brothers,1904,Thomas & Thomas,16.55,1.31,6,A silver mine owner props up a dictator to ensue stability - it backfires
+48,THE RAINBOW,D.H. Lawrence,Modern Library,1915,Thomas & Thomas,5.22,1.47,1,A family of farmers and craftsmen must struggle with Englan's industrailization
+49,WOMEN IN LOVE,D.H. Lawrence,Thomas Selter,1920,Thomas & Thomas,15.80,5.03,10,Two sisters in middle england begin romantic relationships with two men
+50,TROPIC OF CANCER,Henry Miller,Obelisk Press,1934,Thomas & Thomas,18.48,1.52,1,An autobiographical novel that challenged obscenity laws and sexal norms
+51,THE NAKED AND THE DEAD,Norman Mailer,Rinehart,1948,Thomas & Thomas,17.83,2.09,6,An American platoon must drive the Japanese off a small pacific island
+52,PORTNOY’S COMPLAINT,Philip Roth,Random House,1969,Thomas & Thomas,7.54,5.93,10,A bachelor tells his psycoanalyst about his life in intimate and coarse detail
+53,PALE FIRE,Vladimir Nabokov,Puntam's Sons,1962,Thomas & Thomas,13.55,3.49,9,Two fictional poets write a poem about themselves
+54,LIGHT IN AUGUST,William Faulkner,Smith & Hass,1932,Thomas & Thomas,9.78,1.46,1,Two strangers arrive in Mississippi and must face racial issues
+55,ON THE ROAD,Jack Kerouac,Viking Press,1957,Thomas & Thomas,12.37,4.28,1,Kerouac details his counter-culture trip across the United States
+56,THE MALTESE FALCON,Dashiell Hammett,Knopf,1930,Thomas & Thomas,19.41,4.67,2,A private detective must find a priceless statue after his partner dies
+57,PARADE’S END,Ford Madox Ford,Thomas Selter,1924,Thomas & Thomas,9.74,5.14,2,"An English noble's life before, during, and after WWI"
+58,THE AGE OF INNOCENCE,Edith Wharton,D Appleton,1920,Thomas & Thomas,10.70,4.23,3,A lawyer wants to give up a desireable marriage and persues his wife's exotic cousin
+59,ZULEIKA DOBSON,Max Beerbohm,William Heinemann,1911,Thomas & Thomas,19.26,4.34,10,A satirical take on undergraduate life at Oxford
+60,THE MOVIEGOER,Walker Percy,Knopf,1961,Thomas & Thomas,18.82,2.21,7,Binx Bolling is alienated after his trauma in the Korean war but breaks out at Mardi Gras
+61,DEATH COMES FOR THE ARCHBISHOP,Willa Cather,Knopf,1927,Thomas & Thomas,9.03,3.00,7,A catholic bishops and priest try to start a diocese in New Mexico
+62,FROM HERE TO ETERNITY, James Jones,Charles Scribner's Sons,1951,Thomas & Thomas,9.16,2.91,6,Follows the story of several infantrymen in Hawaii in the months before Pearl Harbor
+63,THE WAPSHOT CHRONICLES,John Cheever,Harper & Brothers,1957,Thomas & Thomas,10.00,4.37,0,A mildly autobiographical novel about an eccentric family
+64,THE CATCHER IN THE RYE,J.D. Salinger,Little Brown,1951,Thomas & Thomas,19.54,4.43,1,A coming of age tale about the superficiality of society
+65,A CLOCKWORK ORANGE,Anthony Burgess,William Heinemann,1962,Thomas & Thomas,10.82,3.60,1,Alex goes on violent exploits before undergoing the Ludivigo treatment
+66,OF HUMAN BONDAGE,W. Somerset Maugham,George H Doran,1915,Thomas & Thomas,19.75,4.67,3,This Bildungsroman has an orphan experience a whirlwind life of love and poverty
+67,HEART OF DARKNESS,Joseph Conrad,Blackwood Magazine,1899,Thomas & Thomas,14.87,5.13,4,Charles Marlow goes on an expedition deep into the Congan Jungle
+68,MAIN STREET,Sinclair Lewis,Harcourt Brace,1920,Thomas & Thomas,11.66,3.36,7,This Nobel prize winning novel satirizes small town life
+69,THE HOUSE OF MIRTH,Edith Wharton,Charles Scribner's Sons,1905,Thomas & Thomas,8.18,2.98,1,A young woman gets too old to marry in her class and becomes impoverished
+70,THE ALEXANDRIA QUARTET,Lawrence Durrell,Faber and Faber,1962,Thomas & Thomas,19.55,3.56,8,This quartet of books focuses narrowly on Egypt in and around WWII
+71,A HIGH WIND IN JAMAICA,Richard Hughes,Chatto & Windus,1929,Thomas & Thomas,17.85,2.69,4,A family must deal with technological transformation in post-emancipation Jamaica
+72,A HOUSE FOR MR BISWAS,V.S. Naipaul,Andre Deutsch,1961,Thomas & Thomas,15.55,1.85,5,An Indo-Trinidadian man marries into wealth before deciding to own his own house
+73,THE DAY OF THE LOCUST,Nathanael West,Random House,1939,Thomas & Thomas,15.48,1.77,10,A Yale arts graduate moves to Hollywood only to discover the American dream is a hoax
+74,A FAREWELL TO ARMS,Ernest Hemingway,Charles Scribner's Sons,1929,Thomas & Thomas,19.97,4.11,1,An American expat and an English nurse have an affair during the WWI italian campaign
+75,SCOOP,Evelyn Waugh,Chapman & Hall,1938,Thomas & Thomas,6.84,3.38,5,A young man gets sent to report on a sensational war in Africa
+76,THE PRIME OF MISS JEAN BRODIE,Muriel Spark,Macmillan,1961,Thomas & Thomas,16.81,4.53,10,A Scotish schoolteacher creates personal cirriculum for her star students
+77,FINNEGANS WAKE,James Joyce,Faber and Faber,1939,Thomas & Thomas,16.05,3.59,9,This highly experimental and difficult novel attempts to recreate the feeling of dreams
+78,KIM,Rudyard Kipling,Macmillan,1901,Thomas & Thomas,11.44,4.64,6,A Irish orphan in India becomes immersed in local culture and a masonic conspiracy
+79,A ROOM WITH A VIEW,E.M. Forster,Edward Arnold,1908,Thomas & Thomas,16.89,5.71,10,A middle class English woman goes on a trip to Florance and falls in love
+80,BRIDESHEAD REVISITED,Evelyn Waugh,Chapman & Hall,1945,Thomas & Thomas,13.42,5.13,5,Also known as the sacred and profane memories of Captain Charles Ryder
+81,THE ADVENTURES OF AUGIE MARCH,Saul Bellow,Viking Press,1953,Thomas & Thomas,7.99,1.80,0,A nobel prize winning picareesque novel about a boy growing up during the great depression
+82,ANGLE OF REPOSE,Wallace Stegner,Doubleday,1971,Thomas & Thomas,8.17,1.45,2,A wheelchair-bound historian decides to write about his frontier grandparents
+83,A BEND IN THE RIVER,V.S. Naipaul,Knopf,1979,Thomas & Thomas,9.35,5.02,0,An Indian Muslim observes the rapid changes of a newly independent African naito
+84,THE DEATH OF THE HEART,Elizabeth Bowen,Knopf,1938,Thomas & Thomas,16.13,3.35,10,A girl who lived a whirlwind childhood is innocent to people's evils
+85,LORD JIM,Joseph Conrad,Blackwood Magazine,1900,Thomas & Thomas,14.15,3.51,3,A British seaman abandons a passenger ship with the rest of the crew then gets censured
+86,RAGTIME,E.L. Doctorow,Random House,1975,Thomas & Thomas,17.92,3.67,10,An historical fiction revolving around WWI and the Mexican revolution
+87,THE OLD WIVES’ TALE,Arnold Bennett,Chapman & Hall,1908,Thomas & Thomas,16.82,3.10,7,Two vastly different sisters work together in their mother's shop until old age
+88,THE CALL OF THE WILD,Jack London,Macmillan,1903,Thomas & Thomas,17.56,5.18,10,A dog is stolen from his home to be a sled dog during the Klondike gold rush
+89,LOVING,Henry Green,Hogarth Press,1945,Thomas & Thomas,8.64,5.90,6,An upstairs-downstairs love story set in WWII Ireland
+90,MIDNIGHT’S CHILDREN,Salman Rushdie,Jonathan Cape,1981,Thomas & Thomas,6.11,3.06,5,A loose allegory for India's transition from colony to independence to partition
+91,TOBACCO ROAD,Erskine Caldwell,Charles Scribner's Sons,1932,Thomas & Thomas,9.71,5.76,4,Depression era sharecroppers must uproot their life so they can eat
+92,IRONWEED,William Kennedy,Viking Press,1983,Thomas & Thomas,16.54,4.56,4,An alcoholic vagrant must leave his family after accidently killing his infant son
+93,THE MAGUS,John Fowles,Little Brown,1965,Thomas & Thomas,5.39,5.39,0,A metafiction about a young teacher manipulated by a master trickster
+94,WIDE SARGASSO SEA,Jean Rhys,Andre Deutsch,1966,Thomas & Thomas,12.43,2.53,0,A feminist and anitcolonial literary response to Jane Eyre's depiction of the wife in the attic
+95,UNDER THE NET,Iris Murdoch,Chatto & Windus,1954,Thomas & Thomas,14.24,4.19,4,A long winded freeloader wants to meet back up with his old aquaintance 
+96,SOPHIE’S CHOICE,William Styron,Random House,1979,Thomas & Thomas,15.02,2.17,7,A writer lives in a boarding house with a schizophrenic and a holocaust survivor
+97,THE SHELTERING SKY,Paul Bowles,John Lehmann,1949,Thomas & Thomas,10.46,4.05,6,A married couple travel to the Sahara with their friend to resolve marital troubles
+98,THE POSTMAN ALWAYS RINGS TWICE,James M. Cain,Knopf,1934,Thomas & Thomas,12.51,1.94,3,An unhappy wife seeks to kill off her husband after meeting a man who can satisfy her
+99,THE GINGER MAN,J.P. Donleavy,Olympia Press,1955,Thomas & Thomas,13.87,2.29,2,An American ne'er do well in Dublin satisfies his own insatiable lust for women and liquor
+100,THE MAGNIFICENT AMBERSONS,Booth Tarkington,Doubleday,1918,Thomas & Thomas,18.37,2.29,10,"Old money in Indianapolis gets mad at new money for ""doing"" rather than ""being"""
