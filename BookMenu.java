@@ -1,3 +1,9 @@
+/*
+Joel Reznick
+Thomas Urech
+Thomas Sievers
+Dhruv Hooda
+*/
 package oop;
 
 import java.util.Scanner;
