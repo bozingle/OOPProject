@@ -1,5 +1,5 @@
 # OOPProject:
-Online Shopping System
+Online(Not online) Shopping System - A project for Object Oriented Programming class.
 
 # Members:
 * Joel Reznick
